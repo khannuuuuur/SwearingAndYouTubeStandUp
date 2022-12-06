@@ -12,7 +12,7 @@ def main():
     for i in range(len(swear_words)):
         line = swear_words[i]
         comma = line.index(',')
-        swear_words[i] = (line[:comma], line[comma+1:-1])
+        swear_words[i] = (line[:comma], line[comma+1:-1]) #seperates by word and category
 
     table = pd.DataFrame(columns=['Filename', 'Views', 'Likes', 'Duration',
                                   'Gender', 'Religious', 'Sex', 'Excrement', 'Slur', 'Censored',
